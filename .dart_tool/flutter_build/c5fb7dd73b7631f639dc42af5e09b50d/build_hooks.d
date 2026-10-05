@@ -1,0 +1,1 @@
+ /home/hatch/workspace/gym-retention-demo/.dart_tool/flutter_build/c5fb7dd73b7631f639dc42af5e09b50d/build_hooks_result.json:  /home/hatch/flutter/bin/cache/dart-sdk/version /home/hatch/workspace/gym-retention-demo/.dart_tool/package_config.json /home/hatch/workspace/gym-retention-demo/pubspec.yaml
