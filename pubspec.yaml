@@ -1,4 +1,7 @@
 name: gym_retention_demo
+homepage: https://github.com/Noah-zipit/gym-retention-demo
+repository: https://github.com/Noah-zipit/gym-retention-demo
+issue_tracker: https://github.com/Noah-zipit/gym-retention-demo/issues
 description: "RetainFit — mobile-first gym retention dashboard pitch demo (Red List, QR check-in, renewals, add-ons)."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
