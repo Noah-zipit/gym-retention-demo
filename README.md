@@ -1,10 +1,10 @@
 # RetainFit — Gym Retention OS (pitch demo)
 
 A Flutter demo built for pitching gym owners: a mobile-first retention
-dashboard that turns the four problems every gym loses money to into four
+dashboard that turns the four problems every gym loses money to into five
 screens they can see themselves using.
 
-## The four screens
+## The five screens
 
 - **Dashboard** — the day's numbers at a glance with an animated hero visual
   (code-built, zero assets), and a shortcut into the Red List.
