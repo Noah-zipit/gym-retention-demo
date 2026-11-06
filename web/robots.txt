@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gym-retention-demo.vercel.app/sitemap.xml
