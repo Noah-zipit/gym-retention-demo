@@ -27,7 +27,7 @@ class GlassCard extends StatelessWidget {
     final card = Container(
       padding: padding,
       decoration: BoxDecoration(
-        color: background ?? AppTheme.card.withOpacity(0.72),
+        color: background ?? AppTheme.card.withValues(alpha: 0.72),
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
           color: borderColor ?? AppTheme.cardEdge,
@@ -75,9 +75,9 @@ class MemberAvatar extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [a.withOpacity(0.35), AppTheme.surface],
+          colors: [a.withValues(alpha: 0.35), AppTheme.surface],
         ),
-        border: Border.all(color: a.withOpacity(0.5), width: 1.2),
+        border: Border.all(color: a.withValues(alpha: 0.5), width: 1.2),
       ),
       alignment: Alignment.center,
       child: Text(
@@ -118,7 +118,7 @@ class SectionHeader extends StatelessWidget {
             ],
           ),
         ),
-        if (action != null) action!,
+        ?action,
       ],
     );
   }
@@ -145,9 +145,9 @@ class RiskBadge extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
       decoration: BoxDecoration(
-        color: c.withOpacity(0.14),
+        color: c.withValues(alpha: 0.14),
         borderRadius: BorderRadius.circular(8),
-        border: Border.all(color: c.withOpacity(0.45)),
+        border: Border.all(color: c.withValues(alpha: 0.45)),
       ),
       child: Text(
         label,

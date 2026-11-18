@@ -48,12 +48,12 @@ class AddOnsScreen extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                AppTheme.success.withOpacity(0.20),
-                AppTheme.success.withOpacity(0.05),
+                AppTheme.success.withValues(alpha: 0.20),
+                AppTheme.success.withValues(alpha: 0.05),
               ],
             ),
             border:
-                Border.all(color: AppTheme.success.withOpacity(0.4)),
+                Border.all(color: AppTheme.success.withValues(alpha: 0.4)),
           ),
           child: Row(
             children: [
@@ -140,12 +140,12 @@ class _AddOnCard extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        AppTheme.volt.withOpacity(0.30),
-                        AppTheme.volt.withOpacity(0.08),
+                        AppTheme.volt.withValues(alpha: 0.30),
+                        AppTheme.volt.withValues(alpha: 0.08),
                       ],
                     ),
                     border: Border.all(
-                        color: AppTheme.volt.withOpacity(0.4)),
+                        color: AppTheme.volt.withValues(alpha: 0.4)),
                   ),
                   child: Icon(icon,
                       color: AppTheme.volt, size: 26),
@@ -181,7 +181,7 @@ class _AddOnCard extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(
                       horizontal: 10, vertical: 5),
                   decoration: BoxDecoration(
-                    color: AppTheme.success.withOpacity(0.14),
+                    color: AppTheme.success.withValues(alpha: 0.14),
                     borderRadius: BorderRadius.circular(9),
                   ),
                   child: Text(

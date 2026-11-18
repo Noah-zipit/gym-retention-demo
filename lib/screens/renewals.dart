@@ -40,12 +40,12 @@ class _RenewalsScreenState extends State<RenewalsScreen> {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                AppTheme.warning.withOpacity(0.20),
-                AppTheme.warning.withOpacity(0.05),
+                AppTheme.warning.withValues(alpha: 0.20),
+                AppTheme.warning.withValues(alpha: 0.05),
               ],
             ),
             border:
-                Border.all(color: AppTheme.warning.withOpacity(0.4)),
+                Border.all(color: AppTheme.warning.withValues(alpha: 0.4)),
           ),
           child: Row(
             children: [
@@ -165,10 +165,10 @@ class _RenewRow extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 9, vertical: 4),
                     decoration: BoxDecoration(
-                      color: _urgency.withOpacity(0.14),
+                      color: _urgency.withValues(alpha: 0.14),
                       borderRadius: BorderRadius.circular(8),
                       border: Border.all(
-                          color: _urgency.withOpacity(0.45)),
+                          color: _urgency.withValues(alpha: 0.45)),
                     ),
                     child: Text(_label,
                         style:
@@ -183,10 +183,10 @@ class _RenewRow extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 12, vertical: 9),
                     decoration: BoxDecoration(
-                      color: AppTheme.success.withOpacity(0.14),
+                      color: AppTheme.success.withValues(alpha: 0.14),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                          color: AppTheme.success.withOpacity(0.5)),
+                          color: AppTheme.success.withValues(alpha: 0.5)),
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
