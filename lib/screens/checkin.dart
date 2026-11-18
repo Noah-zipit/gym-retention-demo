@@ -80,15 +80,15 @@ class _CheckInScreenState extends State<CheckInScreen>
             children: [
               AnimatedBuilder(
                 animation: _pulse,
-                builder: (_, __) => Container(
+                builder: (_, _) => Container(
                   padding: const EdgeInsets.all(14),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(18),
                     boxShadow: [
                       BoxShadow(
-                        color: AppTheme.volt.withOpacity(
-                            0.25 + _pulse.value * 0.35),
+                        color: AppTheme.volt.withValues(
+                            alpha: 0.25 + _pulse.value * 0.35),
                         blurRadius: 24 + _pulse.value * 18,
                         spreadRadius: 2,
                       ),
@@ -151,7 +151,7 @@ class _CheckInScreenState extends State<CheckInScreen>
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
             itemCount: streakLeaders.take(6).length,
-            separatorBuilder: (_, __) => const SizedBox(width: 12),
+            separatorBuilder: (_, _) => const SizedBox(width: 12),
             itemBuilder: (context, i) {
               final m = streakLeaders[i];
               return GlassCard(
@@ -175,7 +175,7 @@ class _CheckInScreenState extends State<CheckInScreen>
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8, vertical: 3),
                         decoration: BoxDecoration(
-                          color: AppTheme.warning.withOpacity(0.14),
+                          color: AppTheme.warning.withValues(alpha: 0.14),
                           borderRadius: BorderRadius.circular(8),
                         ),
                         child: Text('${m.streak} day streak',

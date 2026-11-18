@@ -92,7 +92,7 @@ class _HeroCard extends StatelessWidget {
             height: 250,
             width: double.infinity,
             fit: BoxFit.cover,
-            errorBuilder: (_, __, ___) => Container(
+            errorBuilder: (_, _, _) => Container(
               height: 250,
               color: AppTheme.surface,
             ),
@@ -110,8 +110,8 @@ class _HeroCard extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.transparent,
-                    AppTheme.bgDeep.withOpacity(0.55),
-                    AppTheme.bgDeep.withOpacity(0.92),
+                    AppTheme.bgDeep.withValues(alpha: 0.55),
+                    AppTheme.bgDeep.withValues(alpha: 0.92),
                   ],
                   stops: const [0.25, 0.62, 1.0],
                 ),
@@ -211,7 +211,7 @@ class _StatCard extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: accent.withOpacity(0.14),
+              color: accent.withValues(alpha: 0.14),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Icon(icon, color: accent, size: 18),

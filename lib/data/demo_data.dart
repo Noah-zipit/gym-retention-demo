@@ -1,5 +1,6 @@
 /// Seeded demo data for the RetainFit pitch demo.
 /// Dates are relative to "today" so the demo always looks alive.
+library;
 
 class Member {
   Member({

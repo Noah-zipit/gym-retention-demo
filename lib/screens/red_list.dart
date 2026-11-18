@@ -41,11 +41,11 @@ class _RedListScreenState extends State<RedListScreen> {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
               colors: [
-                AppTheme.danger.withOpacity(0.22),
-                AppTheme.danger.withOpacity(0.06),
+                AppTheme.danger.withValues(alpha: 0.22),
+                AppTheme.danger.withValues(alpha: 0.06),
               ],
             ),
-            border: Border.all(color: AppTheme.danger.withOpacity(0.4)),
+            border: Border.all(color: AppTheme.danger.withValues(alpha: 0.4)),
           ),
           child: Row(
             children: [
@@ -171,10 +171,10 @@ class _RedRow extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 14, vertical: 9),
                     decoration: BoxDecoration(
-                      color: AppTheme.success.withOpacity(0.14),
+                      color: AppTheme.success.withValues(alpha: 0.14),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                          color: AppTheme.success.withOpacity(0.5)),
+                          color: AppTheme.success.withValues(alpha: 0.5)),
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
@@ -247,12 +247,12 @@ class _ActionBtn extends StatelessWidget {
         padding:
             const EdgeInsets.symmetric(horizontal: 14, vertical: 9),
         decoration: BoxDecoration(
-          color: primary ? AppTheme.volt : Colors.white.withOpacity(0.06),
+          color: primary ? AppTheme.volt : Colors.white.withValues(alpha: 0.06),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: primary
                 ? Colors.transparent
-                : Colors.white.withOpacity(0.14),
+                : Colors.white.withValues(alpha: 0.14),
           ),
         ),
         child: Row(

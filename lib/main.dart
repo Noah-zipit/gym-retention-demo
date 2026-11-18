@@ -84,10 +84,10 @@ class _ShellState extends State<Shell> {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 8, vertical: 3),
                     decoration: BoxDecoration(
-                      color: AppTheme.volt.withOpacity(0.14),
+                      color: AppTheme.volt.withValues(alpha: 0.14),
                       borderRadius: BorderRadius.circular(7),
                       border: Border.all(
-                          color: AppTheme.volt.withOpacity(0.4)),
+                          color: AppTheme.volt.withValues(alpha: 0.4)),
                     ),
                     child: Text('DEMO',
                         style: AppTheme.mono(9.5,
@@ -129,7 +129,7 @@ class _ShellState extends State<Shell> {
               color: const Color(0xB30D1119),
               border: Border(
                 top: BorderSide(
-                    color: Colors.white.withOpacity(0.08)),
+                    color: Colors.white.withValues(alpha: 0.08)),
               ),
             ),
             child: SafeArea(

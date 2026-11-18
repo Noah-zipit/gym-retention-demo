@@ -40,7 +40,7 @@ class _HeroArtState extends State<HeroArt>
       width: double.infinity,
       child: AnimatedBuilder(
         animation: _ctrl,
-        builder: (_, __) => CustomPaint(
+        builder: (_, _) => CustomPaint(
           painter: _HeroPainter(_ctrl.value, _rand),
           size: Size.infinite,
         ),
@@ -63,8 +63,8 @@ class _HeroPainter extends CustomPainter {
     // Deep radial glow
     final glow = RadialGradient(
       colors: [
-        AppTheme.volt.withOpacity(0.20),
-        AppTheme.volt.withOpacity(0.05),
+        AppTheme.volt.withValues(alpha: 0.20),
+        AppTheme.volt.withValues(alpha: 0.05),
         Colors.transparent,
       ],
       stops: const [0.0, 0.45, 1.0],
@@ -87,7 +87,7 @@ class _HeroPainter extends CustomPainter {
         Paint()
           ..style = PaintingStyle.stroke
           ..strokeWidth = 1.4
-          ..color = AppTheme.volt.withOpacity(alpha),
+          ..color = AppTheme.volt.withValues(alpha: alpha),
       );
     }
 
@@ -103,7 +103,7 @@ class _HeroPainter extends CustomPainter {
     );
 
     // Drifting particles (deterministic pseudo-random field)
-    final p = Paint()..color = AppTheme.volt.withOpacity(0.55);
+    final p = Paint()..color = AppTheme.volt.withValues(alpha: 0.55);
     for (var i = 0; i < 42; i++) {
       final fx = _hash(i * 3 + 1);
       final fy = _hash(i * 3 + 2);
@@ -112,7 +112,7 @@ class _HeroPainter extends CustomPainter {
       final y = (fy * size.height - t * (8 + fs * 18)) % size.height;
       final yy = y < 0 ? y + size.height : y;
       final r = 1 + fs * 2.2;
-      p.color = AppTheme.volt.withOpacity(0.18 + fs * 0.4);
+      p.color = AppTheme.volt.withValues(alpha: 0.18 + fs * 0.4);
       canvas.drawCircle(Offset(x, yy), r, p);
     }
   }
